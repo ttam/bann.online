@@ -1,0 +1,21 @@
+body { cursor: none; overflow: hidden; }
+
+div {
+  background: url(bannon.png);
+  background-size: cover;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  left: 50%;
+  top: 50%;
+  margin-left: -75px;
+  margin-top: -75px;
+  animation: 1500ms ease-in-out infinite dance;
+}
+
+@keyframes dance {
+  0%, 100% { transform: rotate(-15deg); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(-25deg); }
+  75% { transform: rotate(25deg); }
+}
